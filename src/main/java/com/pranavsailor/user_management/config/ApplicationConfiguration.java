@@ -26,14 +26,17 @@ public class ApplicationConfiguration {
                 .orElseThrow(()-> new UsernameNotFoundException("User not found"));
     }
 
+    @Bean
     BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
 
+    @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception{
         return config.getAuthenticationManager();
     }
 
+    @Bean
     AuthenticationProvider authenticationProvider(){
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
 

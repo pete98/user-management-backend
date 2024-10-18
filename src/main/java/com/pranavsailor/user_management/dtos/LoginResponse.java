@@ -14,7 +14,4 @@ public class LoginResponse {
 
     private long expiresIn;
 
-    private String getToken() {
-        return token;
-    }
 }

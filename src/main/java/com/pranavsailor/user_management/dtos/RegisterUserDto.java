@@ -1,6 +1,7 @@
 package com.pranavsailor.user_management.dtos;
 
 import lombok.*;
+import org.jetbrains.annotations.NotNull;
 
 @Getter
 @Setter
